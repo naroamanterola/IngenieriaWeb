@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Formulario</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<style>
+		
+		textarea {
+           		width: 400px; 
+            		height: 200px; 
+       		 }
+
+		</style>
+
+		<link rel="stylesheet" href="styles.css">
+	</head>
+
+	<body>
+	<header>
+		<h1>¡CAMPAMENTO DE VERANO 2025!</h1>
+		<br>
+		
+		<nav>
+		<a href="index.html" style="color: #70A684; margin-right: 20px;">INICIO</a>
+		<a href="paginaFormulario.html" style="color: #70A684; margin-right: 20px;">FORMULARIO</a>
+		<a href="campamentos.html" style="color: #70A684; margin-right: 20px;">CAMPAMENTOS</a>      
+		<a href="queLlevar.html" style="color: #70A684;">QUE LLEVAR</a>
+		</nav>
+		
+
+	</header>
+
+
+	<h1>Inscripción campamento</h1>
+	<p>Rellene el siguiente formulario para inscribir a tu hijo/a al campamento: </p>
+	
+	<form action="server.php" method="post">
+	
+
+	<label for="campamento">Campamento:</label>
+        <select id="campamento" name="campamento">
+            <option value="Udan Olgetan">Udan Olgetan</option>
+            <option value="Larraul">Larraul</option>
+            <option value="Mendigorria">Mendigorria</option>
+            <option value="Pequeño Caminante">Pequeño Caminante</option>
+            <option value="Gran Caminante">Gran Caminante</option>
+        </select>
+
+	<br><br>
+
+
+	<fieldset>
+	<legend>Datos del hijo/a</legend>
+		Nombre: <input type="text"><br>
+		Apellidos: <input type="text"><br>
+		DNI: <input type="text"><br>
+		Fecha de nacimiento: <input type="date"><br>
+		¿Vives en Durango?<br>
+		<input type="radio" name="residencia" value="Si">Si, vivo en Durango
+		<input type="radio" name="residencia" value="No">No vivo en Durango<br>
+		Dirección: <input type="text"><br>
+	</fieldset>
+	
+	<br>
+
+	<fieldset>
+	<legend>Datos del adulto</legend>
+		Nombre: <input type="text"><br>
+		Apellidos: <input type="text"><br>
+		DNI: <input type="text"><br>
+		Teléfono 1: <input type="tel"><br>
+		Teléfono 2: <input type="tel"><br>
+		Correo electrónico: <input type="email"><br>
+	</fieldset>
+	<br>
+
+	<label for="mensaje">Algo que quiera comentar:</label><br>
+        <textarea id="mensaje" name="mensaje">Escribe tu mensaje</textarea><br>
+
+
+	<input type="checkbox" name="acepta" value="acepta">Autorizo fotografiar a mi hijo/a<br><br>
+
+
+	<input type="submit" value="Enviar"><br><br>
+	
+	</form>
+
+	<footer>
+       		<p>&copy; 2024 ¡Campamento Verano 2025!. Todos los derechos reservados.</p>
+        	<p>Contacto: <a href="mailto:campamentoverano2025@gmail.com">campamentoverano2025@gmail.com</a></p>
+    	</footer>
+
+
+
+	</body>
+</html>

@@ -1,0 +1,93 @@
+header{
+	background-color: #A8D5BA; 
+        color: white; 
+        text-align: center; 
+        padding: 2rem;
+	min-height: 5rem;
+}
+
+body{
+	background-color: #E6F7E6;
+	font-size: 16px;
+}
+
+footer{
+	background-color: #A8D5BA;
+        color: white;
+        padding: 2rem;
+	text-align: center;
+}
+
+fieldset {
+            background-color: #D2EAD2;
+            padding: 10px;
+}
+
+h2, h3{
+	color:black;
+	font-family:"Arial";
+}
+
+table {
+        width: 80%; 
+        border-collapse: collapse; 
+	background-color: white;
+}
+
+th, td {
+        border: 1px solid black; 
+        padding: 8px; 
+        text-align: center; 
+}
+
+th {
+       background-color: #f2f2f2; 
+}
+
+
+
+
+@media (max-width: 768px){ /*tablet y móviles*/
+	header{
+		padding: 1rem;
+		min-height:4rem;
+		background-color: #A8D5BA;
+		color: white; 
+	}
+	body{
+		font-size: 14px;
+		background-color: #E6F7E6;
+	}
+	.imagen-container{
+		flex-direction: column;
+	}
+	.imagen-principal{
+		max-width: 90%;
+	}
+	table{
+		width: 100%;
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 480px) { /*para móviles pequeños*/
+    header {
+        font-size: 1.5rem;
+	background-color: #A8D5BA;
+	color: white; 
+    }
+
+    body {
+        font-size: 12px;
+	background-color: #E6F7E6; 
+    }
+
+    .lista-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .lista {
+        width: 100%; 
+    }
+}
